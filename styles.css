@@ -692,6 +692,7 @@ footer {
 
 /* Small phones */
 @media (max-width: 480px) {
+
   .title {
     font-size: 52px;
   }
@@ -715,5 +716,8 @@ footer {
   }
   .modal__half {
     padding: 40px;
+  }
+  .shape {
+    display: none;
   }
 }
