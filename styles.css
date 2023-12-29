@@ -197,6 +197,7 @@ nav,
 
 .social__list {
   margin-top: 16px;
+  gap: 22px;
   display: flex;
 }
 
@@ -212,6 +213,27 @@ nav,
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+
+.social__link-yedidthis {
+  background-color: #f06449;
+  color: white;
+  padding: 6px;
+  width: 15%;
+  height: 32px;
+  font-size: 14px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  letter-spacing: 3px;
+}
+
+.social__link-yedidthis:hover {
+  width: 20%;
+  letter-spacing: 7px;
+  margin-left: 0;
 }
 
 .mail__btn {
