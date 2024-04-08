@@ -19,203 +19,30 @@
 </head>
 
 <body>
-  <section id="landing-page" onmousemove="moveBackground(event)">
-    <nav>
-      <figure>
-        <img class="personal-logo" src="./assets/Białe Okrąg z Przyborami Kuchennymi Restauracja Logo.svg" alt="">
-      </figure>
-      <ul class="nav__link--list">
-        <li class="nav__link" onclick="toggleModal()">
-          <a href="#" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-          ">About</a>
-        </li>
-        <li class="nav__link">
-          <a href="#projects" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-          ">Projects</a>
-        </li>
-        <li class="nav__link" onclick="toggleModal()">
-          <a href="#" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-          ">Contact</a>
-        </li>
-        <li class="nav__link click" onclick="toggleContrast()">
-          <a href="#" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-          "><i class="fas fa-adjust"></i></a>
-        </li>
-      </ul>
-    </nav>
-    <header class="header">
-      <div class="title_small">
+  <div class="container">
+    <h1>MATEUSZ KRETKOWSKI</h1>
+    
+    <section id="about">
+      <h2>CREATOR OF JESUSISKING</h2>
+      <p>"Currently dedicated to leading the development of JESUSISKING, an ambitious project aiming to redefine its domain through innovative technology and a unique approach. This endeavor represents not just a commitment to excellence but a vision for what's possible when creativity meets technology."</p>
+      <p>"JESUSISKING is poised to be a landmark project, setting new standards in its field. The dedication to this project is unwavering, with a clear focus on delivering unparalleled user experiences, robust functionality, and cutting-edge features. Stay tuned for updates as we progress on this exciting journey."</p>
+    </section>
+    
+    <section id="tech-stack">
+      <h2>MATEUSZ KRETKOWSKI'S TECH STACK</h2>
+      <div class="tech-stack">
+        <ul>
+          <li>REACT</li>
+          <li>TYPESCRIPT</li>
+          <li>CSS</li>
+          <li>FIREBASE</li>
+          <li>NODEJS</li>
+          <li>C#</li>
+          <li>PYTHON</li>
+        </ul>
       </div>
-      <div class="header__content">
-        <h1 class="title">Hey,</h1>
-        <h1 class="title orange">I'm Mateusz.</h1>
-        <p class="header__para">
-          I'm a <b class="orange">Fullstack Software Engineer</b> with a strong passion for building web applications
-          with great user
-          experiences.
-          <br>
-          Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
-        </p>
-        <div class="social__list">
-          <a href="https://github.com/mateuszkretkowski" target="_blank" class="social__link click">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://yedidthis-d4467.web.app/" target="_blank" class="social__link-yedidthis click">
-            <h5>YEDIDTHIS.COM</h5>
-          </a>
-        </div>
-      </div>
-    </header>
-    <a href="#">
-      <button class="mail__btn click" onclick="toggleModal()">
-        <i class="fas fa-envelope"></i>
-      </button>
-    </a>
-    <div class="modal">
-      <div class="modal__half modal__about">
-        <h3 class="modal__title modal__title--about">About me.</h3>
-        <h4 class="modal__sub-title modal__sub-title--about">Fullstack Software Engineer.</h4>
-        <p class="modal__para">
-          I am a <b class="orange">14 year old</b> Poland-based <b class="orange">Fullstack Engineer</b> fascinated about building websites from <b class="orange">Scratch.</b> <br>
-          Currently, I can build you a <b class="orange">masterpiece</b> better than this <b class="orange">5 months old E-Portfolio.</b>
-        </p>
-        <div class="modal__languages">
-          <figure class="modal__language">
-            <img class="modal__language--img"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-              alt="">
-            <span class="language__name">HTML</span>
-          </figure>
-          <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
-              alt="">
-            <span class="language__name">CSS</span>
-          </figure>
-          <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
-              alt="">
-            <span class="language__name">JavaScript</span>
-          </figure>
-          <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
-              alt="">
-            <span class="language__name">React</span>
-          </figure>
-          <figure class="modal__language">
-
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-          
-            <span class="language__name">Node.js</span>
-          </figure>
-          <figure class="modal__language">
-            <img class="modal__language--img"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-              alt="">
-            <span class="language__name">C#</span>
-          </figure>
-          <figure class="modal__language">
-
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-          
-            <span class="language__name">Python</span>
-          </figure>
-          <figure class="modal__language">
-
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" />
-          
-            <span class="language__name">Firebase</span>
-          </figure>
-          
-        </div>
-      </div>
-      <div class="modal__half modal__contact">
-        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-        <h3 class="modal__title modal__title--contact">
-          Let's have a chat!
-        </h3>
-        <h3 class="modal__sub-title modal__sub-title--contact">
-          I'm currently open to new opportunities.
-        </h3>
-        <form id="contact__form" onsubmit="contact(event)">
-          <div class="form__item">
-            <label class="form__item--label">Name</label>
-            <input class="input" name="user_name" type="text" required></input>
-          </div>
-          <div class="form__item">
-            <label class="form__item--label">Email</label>
-            <input class="input" name="user_email" type="email" required></input>
-          </div>
-          <div class="form__item">
-            <label class="form__item--label">Message</label>
-            <textarea class="input" name="message" type="text" required></textarea>
-          </div>
-          <button id="contact__submit" class="form__submit">
-            Send it my way
-          </button>
-        </form>
-        <div class="modal__overlay modal__overlay--loading">
-          <i class="fas fa-spinner"></i>
-        </div>
-        <div class="modal__overlay modal__overlay--success">
-          Thanks for the message! Looking forward to speaking to you soon.
-        </div>
-      </div>
-    </div>
-    <img src="./assets/semi circle.svg" class="shape shape--0">
-    <img src="./assets/circle.svg" class="shape shape--1">
-    <img src="./assets/squiggly.svg" class="shape shape--2">
-    <img src="./assets/circle.svg" class="shape shape--3">
-    <img src="./assets/triangle.svg" class="shape shape--4">
-    <img src="./assets/circle.svg" class="shape shape--5">
-    <img src="./assets/squiggly.svg" class="shape shape--6">
-    <img src="./assets/circle.svg" class="shape shape--7">
-    <img src="./assets/semi circle.svg" class="shape shape--8">
-  </section>
-  
-  <footer>
-    <div class="container">
-      <div class="row footer__row">
-        <a href="#" class="footer__anchor">
-          <figure class="footer__logo">
-            <img src="./assets/Białe Okrąg z Przyborami Kuchennymi Restauracja Logo.svg" class="footer__logo--img" alt="">
-          </figure>
-          <span class="footer__logo--popper">
-            Top
-            <i class="fas fa-arrow-up"></i>
-          </span>
-        </a>
-        <div class="footer__social--list">
-          <a href="https://github.com/mateuszkretkowski" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-        ">
-            GitHub
-          </a>
-          <a href="#" onclick="toggleModal()" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-        ">
-            Contact
-          </a>
-        </div>
-        <div class="footer__copyright">Copyright &copy; 2021 Mateusz Kretkowski</div>
-      </div>
-    </div>
-  </footer>
+    </section>
+  </div>
 </body>
 
 </html>
