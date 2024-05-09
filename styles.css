@@ -422,6 +422,8 @@ nav {
 }
 
 .modal__para {
+  font-size: 17px;
+  font-weight: 700;
   margin-bottom: 12px;
   line-height: 1.75;
 }
@@ -586,6 +588,14 @@ nav {
 
 .project__description--para {
   margin: 16px 0;
+  font-weight: 500;
+}
+
+.quote {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 40px;
+  color: #1c1d259c;
 }
 
 /* 
