@@ -16,17 +16,22 @@ function moveBackground(event) {
   }
 }
 
+
 function contact(event) {
     event.preventDefault();
     const loading = document.querySelector(".modal__overlay--loading");
     const success = document.querySelector(".modal__overlay--success");
     loading.classList += " modal__overlay--visible";
+    const inputFields = {
+      email: document.getElementById("email").value,
+      name: document.getElementById("name").value,
+      message: document.getElementById("message").value,
+    };
     emailjs
-      .sendForm(
-        "service_3mct70a",
-        "template_vkbn48u",
-        event.target,
-        "78fLiWqQTzPfxiwhK"
+      .send(
+        "service_o3z1x3j",
+        "template_pzkfzkk",
+        inputFields,
       )
       .then(() => {
         loading.classList.remove("modal__overlay--visible");
@@ -35,7 +40,7 @@ function contact(event) {
       .catch(() => {
         loading.classList.remove("modal__overlay--visible");
         alert(
-          "The email service is temporarily unavailable. Please contact me directly on mkretkowski15@gmail.com"
+          "The email service is temporarily unavailable. Please contact me directly on mkretkowski13@gmail.com"
         );
       });
   }
